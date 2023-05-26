@@ -1,0 +1,19 @@
+
+<div class="app-sample-holder" sampleName="Text input demo">
+<div><h2>{{title}}</h2></div>
+<input type="text" [(appTwoWayBinder)]="title" >
+<button type="button" (click)="changeTitle()">Change</button>
+</div>
+
+<div class="app-sample-holder" sampleName="Checkbox demo">
+<div><h2>Checked {{checked}}</h2></div>
+<span>Checkbox</span>
+<input type="checkbox" [(appTwoWayBinder)]="checked">
+<button type="button" (click)="changeCheck()">Change</button>
+</div>
+
+<div class="app-sample-holder" sampleName="Custom component demo">
+<div><h2>{{customInputTitle}}</h2></div>
+<app-two-way-input [(inputText)]="customInputTitle" [(secondText)]="customInput2Title" />
+<button type="button" (click)="changeCustomInputTitle()">Change</button>
+</div>
